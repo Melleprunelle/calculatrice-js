@@ -19,8 +19,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 50vw;
-    background-color: rgba(0, 0, 0, 0.5);
-    min-height: 96.4vw;
 }
 
 h1 {
