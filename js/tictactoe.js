@@ -1,3 +1,5 @@
+var app;
+
 var tabTictactoe = {
     c0: '',
     c1: '',
@@ -9,6 +11,21 @@ var tabTictactoe = {
     c7: '',
     c8: '',
 };
+
+(function () {
+    app = {
+        play: function play(elt) {
+            tabTictactoe[elt] = 'X';
+            document.getElementById(elt).innerHTML = 'X';
+            whoWins();
+            moveOrdi();
+            whoWins();
+        }
+    };
+    document.getElementById('c0').addEventListener("click", function () {
+        play("c0");
+    });
+})();
 
 function play(elt) {
     document.getElementById(elt).style.backgroundColor = "goldenrod";

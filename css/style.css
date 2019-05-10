@@ -34,6 +34,10 @@ h1 {
     position: relative;
 }
 
+.title-ticTacToe {
+    padding-top: 20px;
+}
+
 h1:after {
     content: '';
     position: absolute;
