@@ -54,6 +54,11 @@ h1:after {
     left: calc(50% - 5%);
 }
 
+.toast-info {
+    background-color: goldenrod;
+    background-image: none;
+}
+
 .affichage {
     width: 320px;
     display: flex;
