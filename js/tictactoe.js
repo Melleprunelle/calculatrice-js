@@ -86,3 +86,7 @@ function whoWins() {
         document.getElementById('affichage-tictactoe').innerHTML = "Vous avez perdu. Fin de partie";
     }
 }
+
+var test = Math.random() * 100;
+var entier = Math.round(test);
+console.log(entier);

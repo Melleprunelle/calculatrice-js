@@ -11,6 +11,7 @@ body {
     background-image: url(../type.png);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .container-page {
@@ -18,12 +19,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 49vw;
     min-height: 100vh;
 }
 
 .container-page:first-child {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-page-puissance4 {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100vw;
 }
 
 h1 {
@@ -191,6 +197,25 @@ h1:after {
     box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
+.affichage-p4 {
+    flex-direction: column;
+    width: 600px;
+}
+
+.affichage-p4 .ligne-p4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.affichage-p4 span {
+    padding: 0;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 360px) {
      .resultat {
         width: 90vw;    
@@ -213,6 +238,12 @@ h1:after {
 
     .container-page {
         width: 100vw;
+        padding: 50px 0;
+        min-height: auto;
+    }
+
+    .affichage-p4 span {
+        height: 45px;
     }
 }
 
