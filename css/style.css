@@ -1,0 +1,198 @@
+* {
+        font-family: 'Muli', sans-serif;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 18px;
+}
+
+body {
+    background-color: #222;
+    margin: 0;
+    background-image: url(../type.png);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 96.4vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 0;
+    position: relative;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 10%;
+    background-color: #fff;
+    bottom: 0;
+    left: calc(50% - 5%);
+}
+
+.affichage {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #222;
+}
+
+.affichage span { 
+    width: 23%;
+    background-color: #111;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 5px 1px;
+    cursor: pointer;
+    transition: ease .2s;
+    border-top: 1px solid #222;
+    box-shadow: 0 2px 0 #000;
+}
+
+.affichage span:hover {
+    background-color: darkcyan;
+    box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.resultat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 320px;    
+}
+
+.resultat2 {
+    width: 300px;
+}
+
+.valider, .total, .eraser, .del {
+    background-color: #111;
+    margin: 0;
+    padding: 1rem;
+    transition: ease .2s;
+    width: 33.33%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.valider, .eraser, .del {
+    box-shadow: 0 2px 0 #000;
+}
+
+.valider:hover, .eraser:hover, .del:hover {
+    box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.valider {
+    background-color: darkcyan;
+    background-image: url(../checked.svg);
+    background-position: center;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.eraser {
+    background-color: goldenrod;
+    background-image: url(../eraser.svg);
+    background-position: center;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.total {
+    width: 100%;
+    text-align: right;
+    min-height: 63px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: darkcyan;
+    position: relative;
+}
+
+.total:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.total p {
+    color: #fff;
+    margin: 2px 0;
+    z-index: 1;
+}
+
+.calendar {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 320px;
+    padding: 10px;
+    background-color: #222;
+}
+
+.calendar p {
+    text-align: center;
+    padding: 20px; 
+    width: 30%;
+    margin: 0;
+    background-color: darkcyan;
+    box-shadow: 0 2px 0 #000;
+}
+
+.tictactoe span {
+    width: 30%;
+    height: 80px;
+}
+
+@media (max-width: 360px) {
+     .resultat {
+        width: 90vw;    
+    }
+}
+
+@media (max-width: 675px) {
+    .affichage { 
+        width: 90vw;        
+    }
+
+    .resultat {
+        width: 90vw;    
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-page {
+        width: 96.4vw;
+    }
+}
+

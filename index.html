@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lise" />
+    <title>Cours de Javascript</title>
+
+    <!-- TYPO -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="container-page">
+        <h1>Calculatrice</h1>
+
+        <div class="resultat resultat2">
+            <div class="total">
+                <p id="affichage"></p>
+            </div>
+        </div>
+
+        <div class="affichage">
+            <span onclick="afficher(7);">7</span>
+            <span onclick="afficher(8);">8</span>
+            <span span onclick="afficher(9);">9</span>
+
+            <span span onclick="afficher('/');">/</span>
+
+            <span span onclick="afficher(4);">4</span>
+            <span span onclick="afficher(5);">5</span>
+            <span span onclick="afficher(6);">6</span>
+
+            <span span onclick="afficher('*');">*</span>
+
+            <span span onclick="afficher(1);">1</span>
+            <span span onclick="afficher(2);">2</span>
+            <span span onclick="afficher(3);">3</span>
+
+            <span span onclick="afficher('-');">-</span>
+
+            <span span onclick="afficher(0);">0</span>
+
+            <span span onclick="afficher('.');">.</span>
+            <span span onclick="afficher('%');">%</span>
+            <span span onclick="afficher('+');">+</span>
+        </div>
+
+        <div class="resultat">
+            <div class="valider" onclick="valider()">Valider</div>
+            <div class="eraser" onclick="effacer()">effacer</div>
+            <div class="del" onclick="retour()">Del</div>
+        </div>
+    </div>
+
+
+    <div class="container-page">
+        <h1>Calendrier</h1>
+
+        <div class="calendar">
+            <p class="day" id="day"></p>
+            <p class="day" id="month"></p>
+            <p class="day" id="year"></p>
+        </div>
+
+        <h1>Tic Tac toe</h1>
+
+        <div class="affichage tictactoe">
+            <span id="c0" onclick="play('c0')"></span>
+            <span id="c1" onclick="play('c1')"></span>
+            <span id="c2" onclick="play('c2')"></span>
+
+            <span id="c3" onclick="play('c3')"></span>
+            <span id="c4" onclick="play('c4')"></span>
+            <span id="c5" onclick="play('c5')"></span>
+
+            <span id="c6" onclick="play('c6')"></span>
+            <span id="c7" onclick="play('c7')"></span>
+            <span id="c8" onclick="play('c8')"></span>
+        </div>
+        <p id="affichage-tictactoe"></p>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <!-- <script src="js/script.js" type="text/javascript"></script> -->
+    <script src="js/calculatrice.js" type="text/javascript"></script>
+    <script src="js/calendar.js" type="text/javascript"></script>
+    <script src="js/tictactoe.js" type="text/javascript"></script>
+</body>
+
+</html>
