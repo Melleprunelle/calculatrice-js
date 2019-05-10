@@ -178,6 +178,19 @@ h1:after {
     height: 80px;
 }
 
+.relancer {
+    padding: 10px;
+    background-color: goldenrod;
+    box-shadow: 0 2px 0 #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.relancer:hover {
+    box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 360px) {
      .resultat {
         width: 90vw;    
